@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Main from './Main';
 import NavBar from './NavBar';
 import Recommendations from './Recommendations';
@@ -8,10 +9,17 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* Switch  */}
-      <Main />
-      <Recommendations />
-      <Reviews />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route exact path="/Recommendations">
+          <Recommendations />
+        </Route>
+        <Route exact path="/Reviews">
+          <Reviews />
+        </Route>
+      </Switch>
     </div>
   );
 }
