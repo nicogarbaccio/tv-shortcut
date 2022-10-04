@@ -1,0 +1,35 @@
+{
+    "shows": [
+        {
+            "id": "1",
+            "title": "Atlanta",
+            "genres": [
+                "Drama",
+                "Comedy"
+            ],
+            "summary": "Two cousins work through the Atlanta music scene in order to better their lives and the lives of their families.",
+            "streaming": "Hulu",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
+            "rating": "9.4",
+            "reviews": [
+                
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Better Call Saul",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Legal"
+            ],
+            "summary": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman Became Walter White's Lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is 'fixer' Mike Ehrmantraut, a beloved character introduced in Breaking Bad. The series tracks Jimmy's transformation into Saul Goodman, the man who puts 'criminal' in 'criminal laywer'.",
+            "streaming": "Netflix",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
+            "rating": "9.1",
+            "reviews": [
+
+            ]
+        }
+    ]
+}

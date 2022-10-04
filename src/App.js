@@ -4,27 +4,34 @@ import Main from './Main';
 import NavBar from './NavBar';
 import Recommendations from './Recommendations';
 import Reviews from './Reviews';
+<<<<<<< HEAD
 import SearchBar from './SearchBar';
 import Show from './Show';
+=======
+>>>>>>> nico
 
 function App() {
   const [shows, setShows] = useState([]);
   const [search, setSearch] = useState("")
   useEffect(() => {
-    fetch("https://api.tvmaze.com/shows")
+    fetch("http://localhost:3000/shows")
     .then((r) => r.json())
     .then(data => setShows(data))
   }, []);
 
-  const displayTVShows = shows.filter(show => 
-    show.name.toLowerCase().includes(search.toLowerCase()))
+  console.log(shows);
+  const displayedShows = shows.filter((show) =>
+    show.title.toLowerCase().includes(search.toLowerCase())
+  )
+
+  console.log(shows);
 
   return (
     <div>
       <NavBar setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Main shows={displayTVShows} />
+          <Main shows={displayedShows} />
         </Route>
         <Route exact path="/Recommendations">
           <Recommendations />
