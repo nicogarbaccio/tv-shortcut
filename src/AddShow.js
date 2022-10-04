@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Reviews() {
+function AddShow() {
     return (
         <div>
-            Reviews
+            Add show
         </div>
     )
 }
 
-export default Reviews;
+export default AddShow;

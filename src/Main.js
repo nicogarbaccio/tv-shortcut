@@ -2,15 +2,15 @@ import React from 'react';
 import Show from './Show'; 
 
 function Main( {shows} ) {
-    const showObj = shows.map((shows) => {
+    const showObj = shows.map((show) => {
         return ( <Show 
-            key={shows.id}
-            id={shows.id}
-            title={shows.title}
-            image={shows.image}
-            genres={shows.genres}
-            about={shows.summary}
-            streaming={shows.streaming}
+            key={show.id}
+            id={show.id}
+            title={show.title}
+            image={show.image}
+            genres={show.genres}
+            about={show.summary}
+            streaming={show.streaming}
         />
         )
     })
@@ -19,9 +19,9 @@ function Main( {shows} ) {
     return (
         <div>
             <div>
-                <h2>Recommended For You</h2>
+                <h2>What's Hot in Drama</h2>
                 <ul>
-                    <li>Placeholder</li>
+                    {showObj}
                 </ul>
             </div>
             <div>

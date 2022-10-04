@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-function Recommendations() {
+function YourList() {
     return (
         <div>
+            Your List
         </div>
     )
 }
 
-export default Recommendations;
+export default YourList;
