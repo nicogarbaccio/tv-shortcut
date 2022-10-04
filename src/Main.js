@@ -10,6 +10,7 @@ function Main( {shows} ) {
             image={shows.image}
             genres={shows.genres}
             about={shows.summary}
+            streaming={shows.streaming}
         />
         )
     })
@@ -28,9 +29,6 @@ function Main( {shows} ) {
                 <ul>
                     {showObj}
                 </ul>
-            </div>
-            <div>
-
             </div>
         </div>
     );

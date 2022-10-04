@@ -10,8 +10,8 @@ function NavBar ( {setSearch} ) {
             <h1>TV Shortcut</h1>
             <SearchBar setSearch={setSearch}/>
             <NavLink to ="/">Home</NavLink>
-            <NavLink exact to ="/Recommendations">Recommendations</NavLink>
-            <NavLink exact to ="/Reviews">Reviews</NavLink>
+            <NavLink exact to ="/Recommendations">Your List</NavLink>
+            <NavLink exact to ="/Reviews">Add a Show</NavLink>
         </nav>
     )
 }

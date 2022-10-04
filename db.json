@@ -3,14 +3,10 @@
         {
             "id": "1",
             "title": "Atlanta",
-            "genres": [
-                "Drama",
-                "Comedy"
-            ],
+            "genres": "Drama",
             "summary": "Two cousins work through the Atlanta music scene in order to better their lives and the lives of their families.",
             "streaming": "Hulu",
             "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
-            "rating": "9.4",
             "reviews": [
                 
             ]
@@ -18,15 +14,43 @@
         {
             "id": "2",
             "title": "Better Call Saul",
-            "genres": [
-                "Drama",
-                "Crime",
-                "Legal"
-            ],
+            "genres": "Drama",
             "summary": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman Became Walter White's Lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is 'fixer' Mike Ehrmantraut, a beloved character introduced in Breaking Bad. The series tracks Jimmy's transformation into Saul Goodman, the man who puts 'criminal' in 'criminal laywer'.",
             "streaming": "Netflix",
             "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
-            "rating": "9.1",
+            "reviews": [
+
+            ]
+        },
+        {
+            "id": "3",
+            "title": "House of the Dragon",
+            "genres": "Fantasy",
+            "summary": "Set 200 years before the events of Game of Thrones, House of the Dragon tells the history of House Targaryen as they fight through a civil war.",
+            "streaming": "HBO Max",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058597.jpg",
+            "reviews": [ 
+
+            ]
+        },
+        {
+            "id": "4",
+            "title": "The Lord of the Rings: The Rings of Power",
+            "genres": "Fantasy",
+            "summary": "Set thousands of years before the events of The Lord of the Rings, this spic drama follows an ensemble cast of characters, both familiar and new, as they contront the long-feared re-emergence of evil to Middle-Earth.",
+            "streaming": "Amazon",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/394/986215.jpg",
+            "reviews": [ 
+
+            ]
+        },
+        {
+            "id": "5",
+            "title": "The Handmaid's Tale",
+            "genres": "Drama",
+            "summary": "The Handmaid's Tale is the story of life in the dystopia of Gilead, a totalitarian society in what was formerly the United States. Facing environmental disasters and a plunging birthrate, Gilead is ruled by a twisted fundamentalism in its militarized 'return to traditional values'. As one of the few remaining fertile women, Offred is a Handmaid in the Commander's household, one of the caste of women forced into sexual servitude as a last desperate attempt to repopulate the world. In this terrifying society, Offred must navigate between Commanders, their cruel Wives, domestic Marthas, and her fellow Handmaids, where anyone could be a spy for Gilead, all with one goal: to survive and find the daughter that was taken from her.",
+            "streaming": "Hulu",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055237.jpg",
             "reviews": [
 
             ]

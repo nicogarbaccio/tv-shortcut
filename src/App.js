@@ -16,10 +16,9 @@ function App() {
 
   console.log(shows);
   const displayedShows = shows.filter((show) =>
-    show.title.toLowerCase().includes(search.toLowerCase())
+    show.title.toLowerCase().includes(search.toLowerCase()) ||
+    show.genres.toLowerCase().includes(search.toLowerCase())
   )
-
-  console.log(shows);
 
   return (
     <div>
