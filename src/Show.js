@@ -3,6 +3,9 @@ import React from "react";
 function Show( {id, name, image, genres, about} ) {
     return (
         <li>
+            <button>
+                Add Reviews
+            </button>
             <div>
                 <img src={image} alt={name} />
             </div>
