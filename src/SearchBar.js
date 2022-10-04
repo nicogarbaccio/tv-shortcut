@@ -1,9 +1,9 @@
 import React from 'react';
 
-function SearchBar() {
+function SearchBar({setSearch}) {
     return (
-        <div>
-            Search Bar
+        <div className="search">
+            <input type="text"  className="searchWord" onChange={(e) =>setSearch(e.target.value)}/>
         </div>
     )
 }

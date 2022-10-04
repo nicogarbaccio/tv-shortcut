@@ -4,21 +4,26 @@ import Main from './Main';
 import NavBar from './NavBar';
 import Recommendations from './Recommendations';
 import Reviews from './Reviews';
+import SearchBar from './SearchBar';
 
 function App() {
   const [shows, setShows] = useState([]);
+  const [search, setSearch] = useState("")
   useEffect(() => {
     fetch("https://api.tvmaze.com/shows")
     .then((r) => r.json())
     .then(data => setShows(data))
-  }, [])
+  }, []);
+
+  const displayTVShows = shows.filter(show => 
+    show.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
     <div>
-      <NavBar />
+      <NavBar setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Main shows={shows} />
+          <Main shows={displayTVShows} />
         </Route>
         <Route exact path="/Recommendations">
           <Recommendations />
@@ -27,6 +32,7 @@ function App() {
           <Reviews />
         </Route>
       </Switch>
+   
     </div>
   );
 }
