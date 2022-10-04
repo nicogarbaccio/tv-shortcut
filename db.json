@@ -54,6 +54,17 @@
             "reviews": [
 
             ]
+        },
+        {
+            "id": "6",
+            "title": "The Simpsons",
+            "genres": "Comedy",
+            "summary": "The Simpsons is the longest running scripted show in US television history. It captures the adventures of Homer, Marge, Bart, Lisa, and Maggie, who are living in a fictional town called Springfield.",
+            "streaming": "Disney Plus",
+            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
+            "reviews": [
+                
+            ]
         }
     ]
 }

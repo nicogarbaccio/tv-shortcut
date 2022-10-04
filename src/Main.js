@@ -2,8 +2,9 @@ import React from 'react';
 import Show from './Show'; 
 
 function Main( {shows} ) {
-    const showObj = shows.map((show) => {
-        return ( <Show 
+    const dramaObj = shows.map((show) => {
+        if (show.genres === "Drama") { return ( 
+        <Show
             key={show.id}
             id={show.id}
             title={show.title}
@@ -11,8 +12,39 @@ function Main( {shows} ) {
             genres={show.genres}
             about={show.summary}
             streaming={show.streaming}
-        />
+         /> 
         )
+        }
+    })
+
+    const fantasyObj = shows.map((show) => {
+        if (show.genres === "Fantasy") { return ( 
+        <Show
+            key={show.id}
+            id={show.id}
+            title={show.title}
+            image={show.image}
+            genres={show.genres}
+            about={show.summary}
+            streaming={show.streaming}
+         /> 
+        )
+        }
+    })
+
+    const comedyObj = shows.map((show) => {
+        if (show.genres === "Comedy") { return ( 
+        <Show
+            key={show.id}
+            id={show.id}
+            title={show.title}
+            image={show.image}
+            genres={show.genres}
+            about={show.summary}
+            streaming={show.streaming}
+         /> 
+        )
+        }
     })
     // const splicedShows = showObj.splice(0, 6);
 
@@ -21,14 +53,20 @@ function Main( {shows} ) {
             <div>
                 <h2>What's Hot in Drama</h2>
                 <ul>
-                    {showObj}
+                   {dramaObj}
                 </ul>
             </div>
             <div>
-                <h2>What's Hot</h2>
-                <ul>
-                    {showObj}
-                </ul>
+                <h2>What's Hot in Comedy</h2>
+                    <ul>
+                        {comedyObj}
+                    </ul>
+            </div>
+            <div>
+                <h2>What's Hot in Fantasy</h2>
+                    <ul>
+                        {fantasyObj}
+                    </ul>
             </div>
         </div>
     );
