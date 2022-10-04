@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Show( {id, name, image, genres, about} ) {
+    const [addReview, setAddReview] = useState(true)
     return (
         <li>
-            <button>
-                Add Reviews
-            </button>
+           
             <div>
                 <img src={image} alt={name} />
             </div>
@@ -14,6 +13,9 @@ function Show( {id, name, image, genres, about} ) {
                 <p>{genres}</p>
                 <p>{about}</p>
             </div>
+            <button input="textarea" onClick>
+                Add Reviews
+            </button>
         </li>
     )
 }

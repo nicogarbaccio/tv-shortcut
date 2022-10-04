@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import Recommendations from './Recommendations';
 import Reviews from './Reviews';
 import SearchBar from './SearchBar';
+import Show from './Show';
 
 function App() {
   const [shows, setShows] = useState([]);
