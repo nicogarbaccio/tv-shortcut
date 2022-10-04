@@ -3,8 +3,7 @@ import SearchBar from './SearchBar';
 import { NavLink } from "react-router-dom"
 
 
-function NavBar ({setSearch}) {
-    
+function NavBar ( {setSearch} ) {
 
     return (
         <nav>

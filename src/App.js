@@ -4,11 +4,6 @@ import Main from './Main';
 import NavBar from './NavBar';
 import Recommendations from './Recommendations';
 import Reviews from './Reviews';
-<<<<<<< HEAD
-import SearchBar from './SearchBar';
-import Show from './Show';
-=======
->>>>>>> nico
 
 function App() {
   const [shows, setShows] = useState([]);

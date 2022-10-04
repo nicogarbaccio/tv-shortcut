@@ -11,17 +11,11 @@ function Show( {id, title, image, genres, about} ) {
                 <p>{genres}</p>
                 <p>{about}</p>
             </div>
-<<<<<<< HEAD
-            <button input="textarea" onClick>
-                Add Reviews
-            </button>
-=======
             <div>
                 <button>
                     Add Reviews
                 </button>
             </div>
->>>>>>> nico
         </li>
     )
 }
