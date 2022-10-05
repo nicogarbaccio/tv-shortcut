@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import Main from './Main';
 import NavBar from './NavBar';
 import YourList from './YourList';
-import Reviews from './Reviews';
 import AddShow from './AddShow';
 
 function App() {
@@ -16,27 +15,38 @@ function App() {
     .then(data => setShows(data))
   }, []);
 
-  console.log(shows);
+  function updateList(showObj) {
+    const updatedArray = shows.map((show) => {
+      if (show.id === showObj.id) {
+        return showObj;
+      } else {
+        return show;
+      }
+    })
+    setShows(updatedArray);
+  }
+
   const displayedShows = shows.filter((show) =>
     show.title.toLowerCase().includes(search.toLowerCase()) ||
     show.genres.toLowerCase().includes(search.toLowerCase())
   )
+
+  function handleAddShow(newShow) {
+    setShows([...shows, newShow]);
+  }
 
   return (
     <div>
       <NavBar setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Main shows={displayedShows} />
+          <Main shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/YourList">
-          <YourList />
+          <YourList shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/AddShow">
-          <AddShow />
-        </Route>
-        <Route exact path="/Reviews">
-          <Reviews />
+          <AddShow handleAddShow={handleAddShow} />
         </Route>
       </Switch>
    

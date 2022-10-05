@@ -1,6 +1,21 @@
 import React, { useState } from "react";
 
-function Show( {id, title, image, genres, about, streaming} ) {
+function Show( { id, title, image, about, streaming, inList, updateList } ) {
+    const [list, setList] = useState(inList)
+    function toggleList() {
+        setList((prev) => !prev)
+        const newObj = {inList: list === true ? false : true}
+        fetch(`http://localhost:3000/shows/${id}`, 
+        {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newObj)
+        })
+        .then((res) => res.json())
+        .then((data) => updateList(data))
+    }
     return (
         <li>
             <div>
@@ -12,8 +27,8 @@ function Show( {id, title, image, genres, about, streaming} ) {
                 <p>Watch it on: {streaming}</p>
             </div>
             <div>
-                <button>
-                    Add Show to List
+                <button onClick={toggleList}>
+                    {list === true? "Remove from list" : "Add to list"}
                 </button>
             </div>
         </li>

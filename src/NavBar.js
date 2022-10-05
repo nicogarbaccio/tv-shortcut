@@ -12,7 +12,6 @@ function NavBar ( {setSearch} ) {
             <NavLink to ="/">Home</NavLink>
             <NavLink exact to ="/YourList">Your List</NavLink>
             <NavLink exact to ="/AddShow">Add a Show</NavLink>
-            <NavLink exact to ="/Reviews">Reviews</NavLink>
         </nav>
     )
 }

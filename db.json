@@ -1,70 +1,141 @@
 {
-    "shows": [
-        {
-            "id": "1",
-            "title": "Atlanta",
-            "genres": "Drama",
-            "summary": "Two cousins work through the Atlanta music scene in order to better their lives and the lives of their families.",
-            "streaming": "Hulu",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
-            "reviews": [
-                
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Better Call Saul",
-            "genres": "Drama",
-            "summary": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman Became Walter White's Lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is 'fixer' Mike Ehrmantraut, a beloved character introduced in Breaking Bad. The series tracks Jimmy's transformation into Saul Goodman, the man who puts 'criminal' in 'criminal laywer'.",
-            "streaming": "Netflix",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
-            "reviews": [
-
-            ]
-        },
-        {
-            "id": "3",
-            "title": "House of the Dragon",
-            "genres": "Fantasy",
-            "summary": "Set 200 years before the events of Game of Thrones, House of the Dragon tells the history of House Targaryen as they fight through a civil war.",
-            "streaming": "HBO Max",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058597.jpg",
-            "reviews": [ 
-
-            ]
-        },
-        {
-            "id": "4",
-            "title": "The Lord of the Rings: The Rings of Power",
-            "genres": "Fantasy",
-            "summary": "Set thousands of years before the events of The Lord of the Rings, this spic drama follows an ensemble cast of characters, both familiar and new, as they contront the long-feared re-emergence of evil to Middle-Earth.",
-            "streaming": "Amazon",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/394/986215.jpg",
-            "reviews": [ 
-
-            ]
-        },
-        {
-            "id": "5",
-            "title": "The Handmaid's Tale",
-            "genres": "Drama",
-            "summary": "The Handmaid's Tale is the story of life in the dystopia of Gilead, a totalitarian society in what was formerly the United States. Facing environmental disasters and a plunging birthrate, Gilead is ruled by a twisted fundamentalism in its militarized 'return to traditional values'. As one of the few remaining fertile women, Offred is a Handmaid in the Commander's household, one of the caste of women forced into sexual servitude as a last desperate attempt to repopulate the world. In this terrifying society, Offred must navigate between Commanders, their cruel Wives, domestic Marthas, and her fellow Handmaids, where anyone could be a spy for Gilead, all with one goal: to survive and find the daughter that was taken from her.",
-            "streaming": "Hulu",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055237.jpg",
-            "reviews": [
-
-            ]
-        },
-        {
-            "id": "6",
-            "title": "The Simpsons",
-            "genres": "Comedy",
-            "summary": "The Simpsons is the longest running scripted show in US television history. It captures the adventures of Homer, Marge, Bart, Lisa, and Maggie, who are living in a fictional town called Springfield.",
-            "streaming": "Disney Plus",
-            "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
-            "reviews": [
-                
-            ]
-        }
-    ]
+  "shows": [
+    {
+      "id": "1",
+      "title": "Atlanta",
+      "genres": "Drama",
+      "summary": "Two cousins work through the Atlanta music scene in order to better their lives and the lives of their families.",
+      "streaming": "Hulu",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
+      "reviews": [],
+      "inList": true
+    },
+    {
+      "id": "2",
+      "title": "Better Call Saul",
+      "genres": "Drama",
+      "summary": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman Became Walter White's Lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is 'fixer' Mike Ehrmantraut, a beloved character introduced in Breaking Bad. The series tracks Jimmy's transformation into Saul Goodman, the man who puts 'criminal' in 'criminal laywer'.",
+      "streaming": "Netflix",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "3",
+      "title": "House of the Dragon",
+      "genres": "Fantasy",
+      "summary": "Set 200 years before the events of Game of Thrones, House of the Dragon tells the history of House Targaryen as they fight through a civil war.",
+      "streaming": "HBO Max",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058597.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "4",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "genres": "Fantasy",
+      "summary": "Set thousands of years before the events of The Lord of the Rings, this spic drama follows an ensemble cast of characters, both familiar and new, as they contront the long-feared re-emergence of evil to Middle-Earth.",
+      "streaming": "Amazon",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/394/986215.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "5",
+      "title": "The Handmaid's Tale",
+      "genres": "Drama",
+      "summary": "The Handmaid's Tale is the story of life in the dystopia of Gilead, a totalitarian society in what was formerly the United States. Facing environmental disasters and a plunging birthrate, Gilead is ruled by a twisted fundamentalism in its militarized 'return to traditional values'. As one of the few remaining fertile women, Offred is a Handmaid in the Commander's household, one of the caste of women forced into sexual servitude as a last desperate attempt to repopulate the world. In this terrifying society, Offred must navigate between Commanders, their cruel Wives, domestic Marthas, and her fellow Handmaids, where anyone could be a spy for Gilead, all with one goal: to survive and find the daughter that was taken from her.",
+      "streaming": "Hulu",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055237.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "6",
+      "title": "The Simpsons",
+      "genres": "Comedy",
+      "summary": "The Simpsons is the longest running scripted show in US television history. It captures the adventures of Homer, Marge, Bart, Lisa, and Maggie, who are living in a fictional town called Springfield.",
+      "streaming": "Disney Plus",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "7",
+      "title": "The Walking Dead",
+      "genres": "Action",
+      "summary": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse. It follows a group of survivors, led by former police officer Rick Grimes, who travel in search of a safe and secure home. As the world overrun by the dead takes its toll on the survivors, their interpersonal conflicts present a greater danger to their continuing survival than the walkers that roam the country. Over time, the characters are changed by the constant exposure to death and some grow willing to do anything to survive.",
+      "streaming": "Netflix",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/424/1061900.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "8",
+      "title": "Tom Clancy's Jack Ryan",
+      "genres": "Action",
+      "summary": "Jack Ryan is a drama featuring Tom Clancy's popular hero Jack Ryan billed as a new contemporary take on the character in his prime as a CIA analyst/operative using the novels as source material.",
+      "streaming": "Prime Video",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059524.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "9",
+      "title": "She-Hulk: Attorney at Law",
+      "genres": "Fantasy",
+      "summary": "She-Hulk follows Jennifer, a lawyer who specializes in superhuman-oriented legal cases. She-Hulk will welcome a host of Marvel characters to the series, including the Hulk, played by Mark Ruffalo, and the Abomination, played by Tim Roth.",
+      "streaming": "Disney Plus",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/416/1042145.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "10",
+      "title": "Rick and Morty",
+      "genres": "Comedy",
+      "summary": "Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.",
+      "streaming": "HBO Max",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059147.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "11",
+      "title": "Star Wars: Andor",
+      "genres": "Fantasy",
+      "summary": "Star Wars: Andor explores a new perspective from the Star Wars galaxy, focusing on Cassian Andor's journey to discover the difference he can make. The series brings forward the tale of the burgeoning rebellion against the Empire and how people and planets became involved. It's an era filled with danger, deception and intrigue where Cassian will embark on the path that is destined to turn him into a rebel hero.",
+      "streaming": "Disney Plus",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/417/1044382.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "12",
+      "title": "Ramy",
+      "genres": "Comedy",
+      "summary": "Ramy Hassan is a first-generation Egyptian-American who is on a spiritual journey in his politically divided New Jersey neighborhood. He becomes caught between a Muslim community that thinks life is a moral test and a millennial generation that believes life has no consequences. Through it all, he's still trying to do the things that most 20-somethings do, like date. He is essentially a guy who is torn between praying on Fridays and going to parties on Friday nights. Which side will win out in this seemingly endless internal battle?",
+      "streaming": "Hulu",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055313.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "id": "13",
+      "title": "The Great British Bake Off",
+      "genres": "Reality",
+      "summary": "Over 10 weeks, 12 of the best amateur bakers in Britain will whisk, knead, ice, beat and bake their way through classic British cakes, perfect patisserie, Italian delights, sticky caramel constructions and elaborate layered puddings. All 12 will be hoping to impress with their skill, creativity, knowledge and passion to clinch the Bake Off Crown. Each of the 30 new challenges have been carefully designed by judges Paul Hollywood and Prue Leith to reveal just who is a star baker.",
+      "streaming": "Netflix",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/355/887905.jpg",
+      "reviews": [],
+      "inList": false
+    },
+    {
+      "title": "Family Guy",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058269.jpg",
+      "genres": "Comedy",
+      "streaming": "Hulu",
+      "id": "x8Cw2RY"
+    }
+  ]
 }
