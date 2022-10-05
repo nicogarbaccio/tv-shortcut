@@ -1,9 +1,10 @@
 import React from 'react';
 
-function AddShow() {
+function AddShow( ) {
     return (
         <div>
-            Add show
+            <h1>Don't see a show?</h1>
+            <h2>Add it below!</h2>
         </div>
     )
 }

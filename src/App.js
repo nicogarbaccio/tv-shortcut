@@ -16,7 +16,17 @@ function App() {
     .then(data => setShows(data))
   }, []);
 
-  console.log(shows);
+  function updateList(showObj) {
+    const updatedArray = shows.map((show) => {
+      if (show.id === showObj.id) {
+        return showObj;
+      } else {
+        return show;
+      }
+    })
+    setShows(updatedArray);
+  }
+
   const displayedShows = shows.filter((show) =>
     show.title.toLowerCase().includes(search.toLowerCase()) ||
     show.genres.toLowerCase().includes(search.toLowerCase())
@@ -27,10 +37,10 @@ function App() {
       <NavBar setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Main shows={displayedShows} />
+          <Main shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/YourList">
-          <YourList />
+          <YourList shows={shows} updateList={updateList} />
         </Route>
         <Route exact path="/AddShow">
           <AddShow />
