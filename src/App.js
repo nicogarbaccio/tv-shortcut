@@ -5,6 +5,7 @@ import Main from './Main';
 import NavBar from './NavBar';
 import YourList from './YourList';
 import AddShow from './AddShow';
+import Recommendations from './Recommendations';
 
 function App() {
   const [shows, setShows] = useState([]);
@@ -52,6 +53,9 @@ function App() {
         </Route>
         <Route exact path="/AddShow">
           <AddShow handleAddShow={handleAddShow} />
+        </Route>
+        <Route exact path="/Recommendations">
+          <Recommendations />
         </Route>
       </Switch>
    
