@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import { NavLink } from "react-router-dom"
 
 
-function NavBar ( {setSearch} ) {
+function NavBar ( {setSearch, isDarkMode, onDarkModeClick} ) {
 
     return (
         <nav>
@@ -12,6 +12,9 @@ function NavBar ( {setSearch} ) {
             <NavLink to ="/">Home</NavLink>
             <NavLink exact to ="/YourList">Your List</NavLink>
             <NavLink exact to ="/AddShow">Add a Show</NavLink>
+            <button onClick={onDarkModeClick}>
+                {isDarkMode ? "Dark" : "Light"} Mode
+            </button>
         </nav>
     )
 }

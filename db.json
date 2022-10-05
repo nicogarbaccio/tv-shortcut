@@ -131,11 +131,24 @@
       "inList": false
     },
     {
+        "id": "14",
+        "title": "Top Chef",
+        "genres": "Reality",
+        "summary": "Top Chef is a competition show in which chefs competing against each other in various culinary challenges, judged by the team of professional chefs and notable people from food industry.",
+        "streaming": "Bravo",
+        "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/995671.jpg",
+        "reviews": [],
+        "inList": false
+    },
+    {
       "title": "Family Guy",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058269.jpg",
       "genres": "Comedy",
+      "summary": "Family Guy follows Peter Griffin the endearingly ignorant dad, and his hilariously offbeat family of middle-class New Englanders in Quahog, RI. Lois is Peter's wife, a stay-at-home mom with no patience for her family's antics. Then there are their kids: 18-year-old Meg is an outcast at school and the Griffin family punching bag; 13-year-old Chris is a socially awkward teen who doesn't have a clue about the opposite sex; and one-year-old Stewie is a diabolically clever baby whose burgeoning sexuality is very much a work in progress. Rounding out the Griffin household is Brian the family dog and a ladies' man who is one step away from AA.",
       "streaming": "Hulu",
-      "id": "x8Cw2RY"
+      "id": "x8Cw2RY",
+      "reviews": [],
+      "inList": false
     }
   ]
 }

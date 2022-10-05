@@ -9,6 +9,7 @@ import AddShow from './AddShow';
 function App() {
   const [shows, setShows] = useState([]);
   const [search, setSearch] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
     fetch("http://localhost:3000/shows")
     .then((r) => r.json())
@@ -35,9 +36,13 @@ function App() {
     setShows([...shows, newShow]);
   }
 
+  function onDarkModeClick() {
+    setIsDarkMode((isDarkMode) => !isDarkMode);
+  }
+
   return (
-    <div>
-      <NavBar setSearch={setSearch}/>
+    <div className={"App " + (isDarkMode ? "dark" : "light")}>
+      <NavBar isDarkMode={isDarkMode} onDarkModeClick={onDarkModeClick} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
           <Main shows={displayedShows} updateList={updateList} />
