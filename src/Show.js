@@ -4,7 +4,7 @@ function Show( {id, title, image, genres, about, streaming} ) {
     return (
         <li>
             <div>
-                <img src={image} alt={title} />
+                <img src={image} alt={title}/>
             </div>
             <div>
                 <h3><b>{title}</b></h3>
@@ -13,7 +13,7 @@ function Show( {id, title, image, genres, about, streaming} ) {
             </div>
             <div>
                 <button>
-                    Add Reviews
+                    Add Show to List
                 </button>
             </div>
         </li>
