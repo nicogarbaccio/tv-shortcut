@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function Show( { id, title, image, about, streaming, inList, updateList } ) {
+    const[showSummary, setShowSummary]= useState(true)
     const [list, setList] = useState(inList)
     function toggleList() {
         setList((prev) => !prev)
@@ -19,7 +20,7 @@ function Show( { id, title, image, about, streaming, inList, updateList } ) {
     return (
         <li>
             <div>
-                <img src={image} alt={title}/>
+                <img src={image} alt={title} onClick ={()=> setShowSummary(prev =>!prev)}/>
             </div>
             <div>
                 <h3><b>{title}</b></h3>
