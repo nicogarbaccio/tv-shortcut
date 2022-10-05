@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import Main from './Main';
 import NavBar from './NavBar';
 import YourList from './YourList';
-import Reviews from './Reviews';
 import AddShow from './AddShow';
 
 function App() {
@@ -32,6 +31,10 @@ function App() {
     show.genres.toLowerCase().includes(search.toLowerCase())
   )
 
+  function handleAddShow(newShow) {
+    setShows([...shows, newShow]);
+  }
+
   return (
     <div>
       <NavBar setSearch={setSearch}/>
@@ -43,10 +46,7 @@ function App() {
           <YourList shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/AddShow">
-          <AddShow />
-        </Route>
-        <Route exact path="/Reviews">
-          <Reviews />
+          <AddShow handleAddShow={handleAddShow} />
         </Route>
       </Switch>
    

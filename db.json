@@ -78,7 +78,7 @@
       "streaming": "Prime Video",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059524.jpg",
       "reviews": [],
-      "inList": true
+      "inList": false
     },
     {
       "id": "9",
@@ -129,6 +129,13 @@
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/355/887905.jpg",
       "reviews": [],
       "inList": false
+    },
+    {
+      "title": "Family Guy",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058269.jpg",
+      "genres": "Comedy",
+      "streaming": "Hulu",
+      "id": "x8Cw2RY"
     }
   ]
 }
