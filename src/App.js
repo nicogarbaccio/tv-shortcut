@@ -40,7 +40,7 @@ function App() {
           <Main shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/YourList">
-          <YourList shows={shows} updateList={updateList} />
+          <YourList shows={displayedShows} updateList={updateList} />
         </Route>
         <Route exact path="/AddShow">
           <AddShow />
