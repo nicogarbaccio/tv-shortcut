@@ -26,29 +26,38 @@ function Recommendations( {shows, updateList} ) {
         .then((res) => res.json())
     }
 
+    // const recommendationArray = shows.filter((show) => {
+    //     if (preferences.drama === true || preferences.comedy === true || preferences.action === true || preferences.fantasy === true) {
+    //         return (
+    //             show.genres === "Drama" || show.genres === "Comedy" || show.genres === "Action" || show.genres === "Fantasy"
+    //         )
+    //     }
+    // })
+
+    // console.log(recommendationArray)
+
+    // const dramaRecs = recommendationArray.map((show) => {
+
+    // })
+    function recTest() {
+        let newArray = [];
+        for (let x in preferences) {
+            for (let i =0; i < shows.length; i++) {
+                if (shows[i].genres === x && preferences[x] === true) {
+                    newArray.push(shows[i]);
+                }        
+            }
+        }
+        console.log(newArray);
+    }
+
+    recTest()
+
     useEffect(() => {
         fetch("http://localhost:3000/recommendations")
         .then((r) => r.json())
         .then(data => setPreferences(data))
       }, []);
-
-    // const recShow = preferences.map((pref) => {
-    //     if (pref.drama === true) {
-    //         return (
-    //         <Show
-    //             key={show.id}
-    //             id={show.id}
-    //             title={show.title}
-    //             image={show.image}
-    //             genres={show.genres}
-    //             about={show.summary}
-    //             streaming={show.streaming}
-    //             inList={show.inList}
-    //             updateList={updateList}
-    //      /> 
-    //         )
-    //     }
-    // })
 
     return (
         <div>

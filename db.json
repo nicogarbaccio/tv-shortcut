@@ -8,7 +8,7 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
       "reviews": [],
-      "likes": 18,
+      "likes": 24,
       "inList": true
     },
     {
@@ -19,7 +19,7 @@
       "streaming": "Netflix",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
       "reviews": [],
-      "likes": 8,
+      "likes": 11,
       "inList": false
     },
     {
@@ -63,7 +63,7 @@
       "streaming": "Disney Plus",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
       "reviews": [],
-      "likes": 0,
+      "likes": 4,
       "inList": false
     },
     {
@@ -107,7 +107,7 @@
       "streaming": "HBO Max",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059147.jpg",
       "reviews": [],
-      "likes": 0,
+      "likes": 4,
       "inList": false
     },
     {
@@ -129,7 +129,7 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055313.jpg",
       "reviews": [],
-      "likes": 0,
+      "likes": 11,
       "inList": false
     },
     {
@@ -162,13 +162,13 @@
       "streaming": "Hulu",
       "id": "x8Cw2RY",
       "reviews": [],
-      "likes": 0,
+      "likes": 5,
       "inList": false
     }
   ],
   "recommendations": {
     "drama": true,
-    "comedy": true,
+    "comedy": false,
     "action": false,
     "fantasy": false
   }
