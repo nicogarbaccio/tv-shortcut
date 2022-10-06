@@ -17,13 +17,14 @@ function YourList( { shows, updateList } ) {
                 inList={show.inList}
                 likes={show.likes}
                 updateList={updateList}
+                
             />
         )
     })
     return (
         <div>
             <h1>Your List</h1>
-            <ul>
+            <ul className='container'>
                 {listObj}
             </ul>
         </div>

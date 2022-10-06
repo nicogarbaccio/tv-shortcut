@@ -127,37 +127,37 @@ function Main( {shows, updateList, onUpdateLikes} ) {
         <div>
             <div>
                 <h2>What's Hot in Drama</h2>
-                <ul>
+                <ul className='container'>
                    {dramaObj}
                 </ul>
             </div>
             <div>
                 <h2>What's Hot in Comedy</h2>
-                <ul>
+                <ul className='container'>
                     {comedyObj}
                 </ul>
             </div>
             <div>
                 <h2>What's Hot in Action</h2>
-                <ul>
+                <ul className='container'>
                     {actionObj}
                 </ul>
             </div>
             <div>
                 <h2>What's Hot in Fantasy</h2>
-                <ul>
+                <ul className='container'>
                     {fantasyObj}
                 </ul>
             </div>
             <div>
                 <h2>What's Hot in Reality</h2>
-                <ul>
+                <ul className='container'>
                     {realityObj}
                 </ul>
             </div>
             <div>
                 <h2>Browse All Shows</h2>
-                <ul>
+                <ul className='browseAll'>
                     {showObj}   
                 </ul>
             </div>

@@ -36,7 +36,7 @@ function Show( { id, title, image, about, streaming, likes, inList, updateList, 
     }
 
     return (
-        <li>
+        <li className="card">
             <div>
                 <img src={image} alt={title} onClick ={()=> setShowAbout(prev =>!prev)}/>
                 {showAbout ? about : null}
@@ -47,7 +47,7 @@ function Show( { id, title, image, about, streaming, likes, inList, updateList, 
                 <p>Watch it on: {streaming}</p>
             </div>
             <div>
-                <p>{likes} likes</p>
+                <p className="showDescription">{likes} likes</p>
                 <button onClick={handleLikeClick} className="likebutton">Like {"<3"}</button>
                 <button onClick={toggleList} className="listButton">
                     {list === true? "Remove from list" : "Add to list"}
