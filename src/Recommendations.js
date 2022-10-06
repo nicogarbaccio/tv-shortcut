@@ -3,11 +3,29 @@ import Show from './Show';
 
 function Recommendations( {shows, updateList} ) { 
     const [preferences, setPreferences] = useState([])
+    const [recArray, setRecArray] = useState([])
+    const [randObject, setRandObject] = useState([])
     const [drama, setDrama] = useState(false)
     const [comedy, setComedy] = useState(false)
     const [action, setAction] = useState(false)
     const [fantasy, setFantasy] = useState(false)
 
+    function testArray(preferences) {
+        let newArray = []; 
+        for (let i = 0; i < shows.length; i++) { 
+            if (preferences.drama === true && shows[i].genres === "Drama") {
+                newArray.push(shows[i])
+            } else if (preferences.comedy === true && shows[i].genres === "Comedy") {
+                newArray.push(shows[i])
+            } else if (preferences.action === true && shows[i].genres === "Action") { 
+                newArray.push(shows[i])
+            } else if (preferences.fantasy === true && shows[i].genres === "Fantasy") {
+                newArray.push(shows[i])
+            }
+        }
+        setRecArray(newArray)
+    }
+    
     function handleSubmit(e) {
         e.preventDefault()
         fetch(`http://localhost:3000/recommendations/`, 
@@ -24,40 +42,27 @@ function Recommendations( {shows, updateList} ) {
             })
         })
         .then((res) => res.json())
+        .then((data) => testArray(data))
     }
-
-    // const recommendationArray = shows.filter((show) => {
-    //     if (preferences.drama === true || preferences.comedy === true || preferences.action === true || preferences.fantasy === true) {
-    //         return (
-    //             show.genres === "Drama" || show.genres === "Comedy" || show.genres === "Action" || show.genres === "Fantasy"
-    //         )
-    //     }
-    // })
-
-    // console.log(recommendationArray)
-
-    // const dramaRecs = recommendationArray.map((show) => {
-
-    // })
-    function recTest() {
-        let newArray = [];
-        for (let x in preferences) {
-            for (let i =0; i < shows.length; i++) {
-                if (shows[i].genres === x && preferences[x] === true) {
-                    newArray.push(shows[i]);
-                }        
-            }
-        }
-        console.log(newArray);
-    }
-
-    recTest()
 
     useEffect(() => {
         fetch("http://localhost:3000/recommendations")
         .then((r) => r.json())
         .then(data => setPreferences(data))
       }, []);
+
+      function getRandomItem(arr) {
+        // get random index value
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        // get random item
+        const item = arr[randomIndex];
+        return [item];
+    }
+    const results = getRandomItem(recArray);
+    // useEffect(() => {
+    //     const result = getRandomItem(recArray);
+    //     setRandObject(result);
+    // }, [])
 
     return (
         <div>
@@ -97,7 +102,21 @@ function Recommendations( {shows, updateList} ) {
             <div>
                 <h2>Your Recommendations</h2>
                 <ul>
-                    Shows here
+                    {results[0] === undefined ? null : (
+                        <div className="container">
+                            <Show
+                                key={results[0].id}
+                                id={results[0].id}
+                                title={results[0].title}
+                                image={results[0].image}
+                                about={results[0].summary}
+                                streaming={results[0].streaming}
+                                inList={results[0].inList}
+                                likes={results[0].likes}
+                                updateList={updateList}
+                            />
+                        </div>
+                    )}
                 </ul>
             </div>
         </div>
