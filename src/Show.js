@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Show( { id, title, image, about, streaming, inList, updateList } ) {
+function Show( { id, title, image, about, streaming, likes, inList, updateList } ) {
     const[showAbout, setShowAbout]= useState(true)
     const [list, setList] = useState(inList)
     function toggleList() {
@@ -29,6 +29,8 @@ function Show( { id, title, image, about, streaming, inList, updateList } ) {
                 <p>Watch it on: {streaming}</p>
             </div>
             <div>
+                <p>{likes} likes</p>
+                <button>Like {"<3"}</button>
                 <button onClick={toggleList}>
                     {list === true? "Remove from list" : "Add to list"}
                 </button>

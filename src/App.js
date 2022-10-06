@@ -55,7 +55,7 @@ function App() {
           <AddShow handleAddShow={handleAddShow} />
         </Route>
         <Route exact path="/Recommendations">
-          <Recommendations />
+          <Recommendations shows={displayedShows} updateList={updateList} />
         </Route>
       </Switch>
    

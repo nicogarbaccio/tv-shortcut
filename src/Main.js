@@ -13,6 +13,7 @@ function Main( {shows, updateList} ) {
             about={show.summary}
             streaming={show.streaming}
             inList={show.inList}
+            likes={show.likes}
             updateList={updateList}
          /> 
         )
@@ -31,6 +32,7 @@ function Main( {shows, updateList} ) {
             about={show.summary}
             streaming={show.streaming}
             inList={show.inList}
+            likes={show.likes}
             updateList={updateList}
          /> 
         )
@@ -50,6 +52,7 @@ function Main( {shows, updateList} ) {
             about={show.summary}
             streaming={show.streaming}
             inList={show.inList}
+            likes={show.likes}
             updateList={updateList}
          /> 
         )
@@ -69,6 +72,7 @@ function Main( {shows, updateList} ) {
             about={show.summary}
             streaming={show.streaming}
             inList={show.inList}
+            likes={show.likes}
             updateList={updateList}
          /> 
         )
@@ -88,6 +92,7 @@ function Main( {shows, updateList} ) {
             about={show.summary}
             streaming={show.streaming}
             inList={show.inList}
+            likes={show.likes}
             updateList={updateList}
          /> 
         )
@@ -107,6 +112,7 @@ function Main( {shows, updateList} ) {
                 about={show.summary}
                 streaming={show.streaming}
                 inList={show.inList}
+                likes={show.likes}
                 updateList={updateList}
             />
         )

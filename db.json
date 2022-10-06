@@ -8,6 +8,7 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": true
     },
     {
@@ -18,6 +19,7 @@
       "streaming": "Netflix",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/399/998743.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -28,6 +30,7 @@
       "streaming": "HBO Max",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058597.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -38,6 +41,7 @@
       "streaming": "Amazon",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/394/986215.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -48,6 +52,7 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055237.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -58,6 +63,7 @@
       "streaming": "Disney Plus",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -68,6 +74,7 @@
       "streaming": "Netflix",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/424/1061900.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -78,6 +85,7 @@
       "streaming": "Prime Video",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059524.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -88,6 +96,7 @@
       "streaming": "Disney Plus",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/416/1042145.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -98,6 +107,7 @@
       "streaming": "HBO Max",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059147.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -108,6 +118,7 @@
       "streaming": "Disney Plus",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/417/1044382.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -118,6 +129,7 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055313.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
@@ -128,17 +140,19 @@
       "streaming": "Netflix",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/355/887905.jpg",
       "reviews": [],
+      "likes": 0,
       "inList": false
     },
     {
-        "id": "14",
-        "title": "Top Chef",
-        "genres": "Reality",
-        "summary": "Top Chef is a competition show in which chefs competing against each other in various culinary challenges, judged by the team of professional chefs and notable people from food industry.",
-        "streaming": "Bravo",
-        "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/995671.jpg",
-        "reviews": [],
-        "inList": false
+      "id": "14",
+      "title": "Top Chef",
+      "genres": "Reality",
+      "summary": "Top Chef is a competition show in which chefs competing against each other in various culinary challenges, judged by the team of professional chefs and notable people from food industry.",
+      "streaming": "Bravo",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/398/995671.jpg",
+      "reviews": [],
+      "likes": 0,
+      "inList": false
     },
     {
       "title": "Family Guy",
@@ -148,7 +162,14 @@
       "streaming": "Hulu",
       "id": "x8Cw2RY",
       "reviews": [],
+      "likes": 0,
       "inList": false
     }
-  ]
+  ],
+  "recommendations": {
+    "drama": true,
+    "comedy": true,
+    "action": false,
+    "fantasy": false
+  }
 }
