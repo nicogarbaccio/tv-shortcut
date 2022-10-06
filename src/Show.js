@@ -48,8 +48,8 @@ function Show( { id, title, image, about, streaming, likes, inList, updateList, 
             </div>
             <div>
                 <p>{likes} likes</p>
-                <button onClick={handleLikeClick}>Like {"<3"}</button>
-                <button onClick={toggleList}>
+                <button onClick={handleLikeClick} className="likebutton">Like {"<3"}</button>
+                <button onClick={toggleList} className="listButton">
                     {list === true? "Remove from list" : "Add to list"}
                 </button>
             </div>
