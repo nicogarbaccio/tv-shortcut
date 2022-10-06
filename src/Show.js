@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
-function Show( { id, title, image, about, streaming, likes, inList, updateList } ) {
-    const[showAbout, setShowAbout]= useState(true)
+function Show( { id, title, image, about, streaming, likes, inList, updateList, onUpdateLikes } ) {
+    const[showAbout, setShowAbout]= useState(false)
     const [list, setList] = useState(inList)
+
     function toggleList() {
         setList((prev) => !prev)
         const newObj = {inList: list === true ? false : true}
@@ -17,6 +18,23 @@ function Show( { id, title, image, about, streaming, likes, inList, updateList }
         .then((res) => res.json())
         .then((data) => updateList(data))
     }
+
+    function handleLikeClick() {
+        const updateLikes = {
+            likes: likes += 1,
+        }
+        fetch(`http://localhost:3000/shows/${id}`, 
+        {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updateLikes)
+        })
+        .then((res) => res.json())
+        .then(onUpdateLikes);
+    }
+
     return (
         <li>
             <div>
@@ -30,7 +48,7 @@ function Show( { id, title, image, about, streaming, likes, inList, updateList }
             </div>
             <div>
                 <p>{likes} likes</p>
-                <button>Like {"<3"}</button>
+                <button onClick={handleLikeClick}>Like {"<3"}</button>
                 <button onClick={toggleList}>
                     {list === true? "Remove from list" : "Add to list"}
                 </button>

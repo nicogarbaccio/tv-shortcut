@@ -1,7 +1,7 @@
 import React from 'react';
 import Show from './Show'; 
 
-function Main( {shows, updateList} ) {
+function Main( {shows, updateList, onUpdateLikes} ) {
     const dramaObj = shows.map((show) => {
         if (show.genres === "Drama") { return ( 
         <Show
@@ -15,6 +15,7 @@ function Main( {shows, updateList} ) {
             inList={show.inList}
             likes={show.likes}
             updateList={updateList}
+            onUpdateLikes={onUpdateLikes}
          /> 
         )
         }
@@ -34,6 +35,7 @@ function Main( {shows, updateList} ) {
             inList={show.inList}
             likes={show.likes}
             updateList={updateList}
+            onUpdateLikes={onUpdateLikes}
          /> 
         )
         }
@@ -54,6 +56,7 @@ function Main( {shows, updateList} ) {
             inList={show.inList}
             likes={show.likes}
             updateList={updateList}
+            onUpdateLikes={onUpdateLikes}
          /> 
         )
         }
@@ -74,6 +77,7 @@ function Main( {shows, updateList} ) {
             inList={show.inList}
             likes={show.likes}
             updateList={updateList}
+            onUpdateLikes={onUpdateLikes}
          /> 
         )
         }
@@ -94,6 +98,7 @@ function Main( {shows, updateList} ) {
             inList={show.inList}
             likes={show.likes}
             updateList={updateList}
+            onUpdateLikes={onUpdateLikes}
          /> 
         )
         }
@@ -114,6 +119,7 @@ function Main( {shows, updateList} ) {
                 inList={show.inList}
                 likes={show.likes}
                 updateList={updateList}
+                onUpdateLikes={onUpdateLikes}
             />
         )
     })

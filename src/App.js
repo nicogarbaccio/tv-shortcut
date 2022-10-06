@@ -41,21 +41,28 @@ function App() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
+  function handleUpdateLikes(updatedShow) {
+    const updatedShows = shows.map((show) => 
+      show.id === updatedShow.id ? updatedShow : show
+    );
+    setShows(updatedShows);
+  }
+
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       <NavBar isDarkMode={isDarkMode} onDarkModeClick={onDarkModeClick} setSearch={setSearch}/>
       <Switch>
         <Route exact path="/">
-          <Main shows={displayedShows} updateList={updateList} />
+          <Main shows={displayedShows} onUpdateLikes={handleUpdateLikes} updateList={updateList} />
         </Route>
         <Route exact path="/YourList">
-          <YourList shows={displayedShows} updateList={updateList} />
+          <YourList shows={displayedShows} onUpdateLikes={handleUpdateLikes} updateList={updateList} />
         </Route>
         <Route exact path="/AddShow">
           <AddShow handleAddShow={handleAddShow} />
         </Route>
         <Route exact path="/Recommendations">
-          <Recommendations shows={displayedShows} updateList={updateList} />
+          <Recommendations shows={displayedShows} onUpdateLikes={handleUpdateLikes} updateList={updateList} />
         </Route>
       </Switch>
    
