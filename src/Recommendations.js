@@ -51,52 +51,56 @@ function Recommendations( {shows, updateList} ) {
         .then(data => setPreferences(data))
       }, []);
 
-      function getRandomItem(arr) {
-        // get random index value
+    function getRandomItem(arr) {
         const randomIndex = Math.floor(Math.random() * arr.length);
-        // get random item
         const item = arr[randomIndex];
         return [item];
     }
+
     const results = getRandomItem(recArray);
-    // useEffect(() => {
-    //     const result = getRandomItem(recArray);
-    //     setRandObject(result);
-    // }, [])
 
     return (
         <div>
             <form onSubmit={handleSubmit}>
                 <h2>Let's Find You a New Show!</h2>
                 <h3>What are some genres you like?</h3>
-                <label for="drama">Drama</label>
-                <input 
-                    type="checkbox" 
-                    name="drama" 
-                    value={drama}
-                    onChange={(e) => setDrama(e.target.checked)}
-                    />
-                <label for="comedy">Comedy</label>
-                <input 
-                    type="checkbox" 
-                    name="comedy" 
-                    value={comedy} 
-                    onChange={(e) => setComedy(e.target.checked)}
-                    />
-                <label for="action">Action</label>
-                <input 
-                    type="checkbox" 
-                    name="action" 
-                    value={action} 
-                    onChange={(e) => setAction(e.target.checked)}
-                    />
-                <label for="fantasy">Fantasy</label>
-                <input 
-                    type="checkbox" 
-                    name="fantasy" 
-                    value={fantasy}
-                    onChange={(e) => setFantasy(e.target.checked)}
-                    />
+                <h3>(Check as many as you'd like!)</h3>
+                <div className="recBox">
+                    <label htmlFor="drama">Drama</label>
+                    <input 
+                        type="checkbox" 
+                        name="drama" 
+                        value={drama}
+                        onChange={(e) => setDrama(e.target.checked)}
+                        />
+                </div>
+                <div className="recBox">
+                <label htmlFor="comedy">Comedy</label>
+                    <input 
+                        type="checkbox" 
+                        name="comedy" 
+                        value={comedy} 
+                        onChange={(e) => setComedy(e.target.checked)}
+                        />
+                </div>
+                <div className="recBox">
+                    <label htmlFor="action">Action</label>
+                    <input 
+                        type="checkbox" 
+                        name="action" 
+                        value={action} 
+                        onChange={(e) => setAction(e.target.checked)}
+                        />
+                </div>
+                <div className="recBox">
+                    <label htmlFor="fantasy">Fantasy</label>
+                    <input 
+                        type="checkbox" 
+                        name="fantasy" 
+                        value={fantasy}
+                        onChange={(e) => setFantasy(e.target.checked)}
+                        />
+                </div>
                 <button type="submit">Get Shows!</button>
             </form>
             <div>

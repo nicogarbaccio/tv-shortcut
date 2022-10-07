@@ -8,8 +8,8 @@
       "streaming": "Hulu",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/420/1050547.jpg",
       "reviews": [],
-      "likes": 27,
-      "inList": false
+      "likes": 28,
+      "inList": true
     },
     {
       "id": "2",
@@ -63,7 +63,7 @@
       "streaming": "Disney Plus",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058261.jpg",
       "reviews": [],
-      "likes": 4,
+      "likes": 61,
       "inList": false
     },
     {
@@ -86,7 +86,7 @@
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059524.jpg",
       "reviews": [],
       "likes": 0,
-      "inList": false
+      "inList": true
     },
     {
       "id": "9",
@@ -107,7 +107,7 @@
       "streaming": "HBO Max",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1059147.jpg",
       "reviews": [],
-      "likes": 4,
+      "likes": 8,
       "inList": false
     },
     {
@@ -171,8 +171,9 @@
       "genres": "Action",
       "summary": "In a world where superheroes embrace the darker side of their massive celebrity and fame, The Boys centres on a group of vigilantes known informally as 'The Boys', who set out to take down corrupt superheroes with no more than blue collar grit and a willingness to fight dirty.",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/409/1024044.jpg",
+      "streaming": "Amazon",
       "reviews": [],
-      "likes": 0,
+      "likes": 5,
       "inList": false
     },
     {
@@ -181,6 +182,7 @@
       "genres": "Reality",
       "summary": "U.S. version of the British show Love Island where a group of singles come to stay in a villa for a few weeks and have to couple up with one another, those who fail to find a partner to couple up with risk being dumped from the island. Islanders are on the lookout for romance, but the road to love doesn't always run smoothly. Challenges abound with new Islander arrivals and dramatic twists as friendships and relationships form. In addition to choosing their partners wisely, Islanders must also win the hearts of viewers who have the opportunity to shape events on screen and ultimately crown one lucky couple the winner, who will then have the chance to walk away with both love and the cash prize.",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/416/1041025.jpg",
+      "streaming": "Peacock",
       "reviews": [],
       "likes": 0,
       "inList": false
@@ -192,6 +194,7 @@
       "summary": "An up-close and personal look at life in Hotlanta, The Real Housewives of Atlanta follows five glamorous southern belles as they balance motherhood, demanding careers and a fast-paced social calendar, and shows what life is like in the most exclusive areas of Atlanta. These driven and ambitious women prove that they're not just housewives, but entrepreneurs, doting mothers and classy southern women. These ladies show the world what it takes to live large in some of the hottest zip codes in the south.",
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/418/1045226.jpg",
       "reviews": [],
+      "streaming": "Peacock",
       "likes": 0,
       "inList": false
     },
@@ -203,14 +206,25 @@
       "image": "https://static.tvmaze.com/uploads/images/medium_portrait/384/960582.jpg",
       "reviews": [],
       "streaming": "Apple TV+",
-      "likes": 0,
+      "likes": 78,
       "inList": false
+    },
+    {
+      "id": "19",
+      "title": "Banshee",
+      "genres": "Action",
+      "summary": "Banshee stars Antony Starr as Lucas Hood, an ex-con and master thief who assumes the identity of the sheriff of Banshee, Pennsylvania, where he continues his criminal activities, even as he's hunted by the shadowy gangsters he betrayed years earlier.",
+      "image": "https://static.tvmaze.com/uploads/images/medium_portrait/80/201761.jpg",
+      "reviews": [],
+      "streaming": "HBO Max",
+      "likes": 47,
+      "inList": "false"
     }
   ],
   "recommendations": {
     "drama": true,
-    "comedy": true,
-    "action": true,
+    "comedy": false,
+    "action": false,
     "fantasy": false
   }
 }
