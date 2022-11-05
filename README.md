@@ -1,5 +1,9 @@
 # TV Shortcut
 
+TV Shortcut is a handy tool made to help you spend less time figuring out what to watch and more time actually watching. Users can search for shows, browse through what's popular, get recommendations based on their favorite genres, and then keep track of what they want to watch. 
+
+Data parsed from the [TVmaze API](https://www.tvmaze.com/api). 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
